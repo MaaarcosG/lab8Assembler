@@ -6,9 +6,14 @@
 	Programa que multiplica 2 numero.
 */
 
+.data
+string1: .asciz "resul: %d"
+
 .text
 .global main
+.extern printf
 main:
+  ldr r9, =string1
   str fp, [sp, #-4]!
   add fp, sp, #0
   sub sp, sp, #12
@@ -24,4 +29,5 @@ main:
   mov r0, r3
   add sp, fp, #0
   ldmfd sp!, {fp}
+  bl printf
   bx lr
