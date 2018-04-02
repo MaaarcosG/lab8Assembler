@@ -13,7 +13,7 @@ string1: .asciz "resul: %d"
 .global main
 .extern printf
 main:
-  ldr r9, =string1
+  ldr r4, =string1
   str fp, [sp, #-4]!
   add fp, sp, #0
   sub sp, sp, #12
@@ -31,4 +31,3 @@ main:
   ldmfd sp!, {fp}
   bl printf
   bx lr
-  
