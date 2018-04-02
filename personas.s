@@ -7,7 +7,7 @@
 */
 
 .text
-.global
+.global main
 main:
   str fp, [sp, #-4]!
   add fp, sp, #0
