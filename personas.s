@@ -31,3 +31,4 @@ main:
   ldmfd sp!, {fp}
   bl printf
   bx lr
+  
