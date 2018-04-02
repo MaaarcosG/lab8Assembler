@@ -30,4 +30,4 @@ main:
   add sp, fp, #0
   ldmfd sp!, {fp}
   bl printf
-  bx lr
+
